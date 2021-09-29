@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Styling the common parts-------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: var(--secondary-color);
+}
+:root {
+  --primary-color: #152028;
+  --secondary-color: white;
+}
+.light-mode {
+  --primary-color: white;
+  --secondary-color: #152028;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: var(--primary-color);
+   color:var(--secondary-color);
+}
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header{
+  border:none !important;
+
+}
+footer{
+  border:none !important;
+}
+.MenuBar {
+ width: 84%;
+ margin: auto;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  
+}
+
+.MenuBar img {
+  height: 18vh;
+  padding: 20px;
+}
+.dropbtn{
+  display: none;
+}
+.MenuBar #ListMenu {
+  padding: 30px;
+  text-align: right;
+  padding: 20px 10px 20px 0px;
+  
+}
+
+#logo {
+  height: 150px;
+  width: auto;
+  padding: 20px 0 20px 0;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -75px;
+}
+#switch {
+  height: 200%;
+  width: auto;
+  padding: 20px 0 20px 0;
+}
+#icon {
+  width: 30px;
+  height: auto;
+  padding: 20px 0 20px 0;
+  cursor: pointer;
+  margin-right: -60px;
+}
+
+
+.MenuBar li {
+  display: inline;
+  margin: 5px;
+}
+
+.MenuBar li a:hover {
+  color: #0088a9;
+  border-bottom: 1px solid #1b9bff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.MenuBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: rgba(2, 4, 39, 0.863);
+  color: white;
+  bottom: 10px;
+  padding: 10px;
+  border: 1px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: red;
+}
+p {
+  font-size: 1.3em;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(65, 48, 48);
+  margin: 5px;
+}
+.the_footer {
+  margin-top: 20px;
+  border-top: 2px solid black;
+}
+.the_footer address {
+  display: flex;
+  flex-direction: column;
+}
+
+.Social-Media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  height: 40%;
+  border-bottom: 1px solid black;
+}
+.Social-Media img {
+  height: 20%;
+}
+.Social-Media a:hover {
+  color: #0088a9;
+  border-bottom: 1px solid #1b9bff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#copy-right {
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: -10px;
+}
+
+address #Find {
+  display: block;
+  text-align: center;
+  border-bottom: 1px double green;
+  width:30%;
+  margin: auto;
+}
+address ul {
+  float: right;
+}
+address div {
+  padding: 10px;
+}
+address ul li {
+  padding: 40px;
+}
+
+.Social-Media img {
+  width: 50px;
+}
+
+.Social-Media li {
+  display: inline;
+  right: 0px;
+}
+
+/* Styling Index.html -------------------------------------------------------------------------------------------------------------------*/
+
+
+.down_nav {
+  position: relative;
+  background-image: url("../Content/Welcoming1_lower.jpg");
+  background-size: cover;
+  margin-top: 20px;
+  height: 50em;
+  color: var(--secondary-color);
+  border-radius:20px ;
+  min-height: 100%;
+}
+.row h1 {
+  margin-top: 100px;
+  border-bottom: 1px solid green;
+  padding: 20px;
+  display: block;
+}
+.main-row1 strong,.main-row2  strong {
+  border-bottom: 1px double green;
+  display: block;
+  height: 5vh;
+}
+.main-row1 p,.main-row2 p {
+  padding: 100px;
+  word-spacing: normal;
+}
+.main-row1 img ,.main-row2 img
+{
+  width:80%;
+  margin-left:40px ;
+  margin-top:30px ;
+  border-radius:20px ;
+}
+.down_nav div {
+  position: absolute;
+  margin: 100px;
+  animation: drop 1.0s ease;
+}
+.down_nav div p {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  width: auto;
+}
+.down_nav div .button {
+  position: absolute;
+  right: 10px;
+}
+
+#header-text figcaption {
+  position: absolute;
+  bottom: 300px;
+  font-size: 350%;
+  text-transform: uppercase;
+}
+#header-text a {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+
+figure {
+  margin: 0px;
+}
+figcaption {
+  text-align: center;
+}
+
+header,
+main,
+footer {
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+#main_article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.8em;
+  border:none !important;
+}
+.main-row1 ,.main-row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+}
+
+.row p {
+  padding: 40px;
+}
+.row figcaption {
+  padding: 40px;
+  font-size: large;
+}
+
+#index-main {
+  padding: 10px;
+  margin: 10px;
+  border:none !important;
+  /* border:noneborder:none
+  /* border: 0px; */
+}
+
+.welcoming-loc {
+  position: relative;
+  background-image: url("../Content/Welcoming4.jpg");
+  background-size: cover;
+  height: 50em;
+  border-radius:20px ;  
+}
+.welcoming_cap {
+  position: absolute;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  width: 90%;
+  display: inline;
+  top: 100px;
+  left: 50px;
+  outline: 3px solid rgb(26, 27, 26);
+  outline-offset: 0.5em;
+  background-image: url(../Content/Background-locations.jpg);
+  background-size: cover;
+  margin: 10px;
+}
+.welcoming_cap a {
+  position: absolute;
+  right: 5px;
+}
+.welcoming_cap p {
+  position: relative;
+  color: white;
+}
+#main_article p{
+  color:var(--secondary-color);
+}
+/* Styling Location.html ------------------------------------------------------------------------------------------------------------------- */
+
+#locations-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50em;
+  padding: 20px;
+  border: none!important;
+  outline-offset: 0.5em;
+  background-image: url(../Content/Background-locations.jpg);
+  background-size: cover;
+  border-radius: 40px;
+
+}
+#locations-container div {
+  animation: drop 1.5s ease;
+}
+#locations-container h3,
+h2,
+p {
+  color: white;
+}
+
+/* Styling Menu.html -------------------------------------------------------------------------------------------------------------------*/
+#menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  text-align: center;
+  animation: drop 1.0s ease;
+  background-image: url(../Content/menu-back.jpg);
+  border:none !important;
+  border-radius: 40px;
+ 
+}
+#menu-container summary {
+  color: white;
+}
+#menu-container table {
+  border-collapse: collapse;
+  margin: 15px;
+}
+.Main-Dishes {
+  grid-column: 1/3;
+}
+.Discount-table {
+  grid-column: 1/3;
+}
+
+#menu-container td {
+  border: 1px solid black;
+  color: white;
+  background-color: #152028;
+  width: 100vh;
+  padding: 10px;
+}
+
+#menu-container tr:first-child {
+  background-color: darkblue;
+}
+table{
+  border-radius: 20px;
+}
+/* Styling News.html -------------------------------------------------------------------------------------------------------------------*/
+#news-container{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  animation: drop 1.0s ease;
+  margin: 20px;
+  border:none !important;
+}
+#photos-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+}
+#news-container section {
+  padding: 20px;
+}
+.news-figure  img {
+  border-radius: 20px;
+}
+.news-figure h3
+{
+  padding:10px;
+}
+
+#vids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+#vids p{
+  padding:10px;
+}
+video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+/* Styling Reservation.html -------------------------------------------------------------------------------------------------------------------*/
+#reservation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Content/reservation-back.jpg);
+  background-size: cover;
+  color: white;
+  border:none !important;
+  border-radius: 40px;
+  height: 50em;
+}
+#reservation-container form {
+  text-align: center;
+  padding: 25px 20px;
+  margin: 10px 0 10px 0;
+  animation: drop 1.0s ease;
+  width: 150vh;
+}
+#reservation-container fieldset {
+  background-image: url(../Content/reservation-back-blurred.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+#reservation-container legend {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #152028;
+  border-radius: 10px;
+  color: white;
+}
+#reservation-container p {
+  color: white;
+}
+#reservation-container input,
+label {
+  margin: 30px 0 20px 0;
+  color: white;
+}
+#reservation-container input {
+  /* background-color:#152028 ; */
+  border-top: none!important;
+  border-right: none!important;
+  border-left:none!important;
+  border-bottom: 2px solid #1b9bff;
+  color:black;
+  border-radius: 5px;
+}
+#reservation-container input .button
+{
+  background-color: rgba(2, 4, 39, 0.863);
+  color:white;
+  bottom: 10px;
+  padding: 10px;
+  border: 1px;
+  cursor: pointer;
+}
+#reservation-container.button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Styling FeedBack.html ------------------------------------------------------------------------------------------------------------------- */
+
+#feedback-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Content/FeedBack-back.jpg);
+  background-size: cover;
+  color: white;
+  border:none !important;
+  border-radius: 40px;
+  height: 50em;
+}
+#feedBack-table legend {
+  border: 1px solid black;
+  background-color: #152028;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+#feedBack-table {
+  margin: 20px 0 5px 0;
+  padding: 20px;
+  /* height: 100vh; */
+  width: 150vh;
+  text-align: center;
+  animation: drop 1.0s ease;
+}
+#feedBack-table fieldset {
+  border: 4px solid black;
+  background-image: url(../Content/FeedBack-back-blurred.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+#feedBack-table label,
+input {
+  margin: 50px 0 40px 0;
+  color: white;
+}
+#feedBack-table input,
+textarea {
+  color: black;
+}
+#comments-sec {
+  border-radius: 5px;
+  /* background-color: red; */
+  border-top: none!important;
+  border-right: none!important;
+  border-left:none!important;
+  border-bottom: 2px solid #1b9bff;
+  color:black;
+  width: 30vw;
+  height: 20vh;
+  }
+#email-feedback {
+  border-top: none!important;
+  border-right: none!important;
+  border-left:none!important;
+  border-bottom: 2px solid #1b9bff;
+  color:black;
+  width: 30vw;
+  border-radius: 5px;
+
+}
+#feedBack-table .button {
+  color: white;
+}
+#feedBack-table .button:hover{
+  color:black;
+}
+
+/* Resoposivity-------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* BreakPoint 2 */
+@media screen and (max-width: 824px) {
+  body{
+    font-size:0.9em;
+  }
+  .main-row1 , .main-row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: justify;
+  }
+  #icon{
+    margin-right: 40px;
+  }
+  .down_nav div {
+    margin-left:-1px;
+   
+  }
+  img {
+    width: 90%;
+    height: auto;
+  }
+  #photos-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+  }
+
+  #vids {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+  }
+  #menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Desserts-table {
+    grid-column: 1/3;
+  }
+  .down_nav div p {
+    font-size: 4.3rem;
+  }
+
+
+
+
+
+}
+/* BreakPoint 3 */
+
+@media screen and (max-width: 634px) {
+  #logo{
+   display: none;
+  }
+  #icon{
+    margin-right: 40px;
+  }
+  .ListMenu{
+    margin-left: -20px;
+  }
+  .welcoming_cap
+  {
+    left:15px;
+  }
+  .down_nav div {
+    width:78%;
+   height: auto;
+   margin-left:-10px;
+ 
+  }
+  .down_nav div p {
+    font-size: 4rem;
+  }
+  .down_nav  div .button {
+    margin-right:-40px ;
+
+  }
+  .down_nav div
+  {
+    margin-left: 5px;
+  }
+
+}
+
+
+/* BreakPoint 4 */
+@media screen and (max-width:522px){
+  #ListMenu{
+    flex-direction: column;
+  }
+  .MenuBar 
+  {
+    height: 12rem;
+    
+  }
+  .down_nav div p {
+    font-size: 3rem;
+  }
+  .down_nav  div .button {
+    margin-right:-60px ;
+    
+  }
+  .Social-Media {
+    width:30%;
+    margin: auto;
+  }
+ 
+  
+ 
+}
+
+
+
+
+@media print{
+  .MenuBar{
+    display: none;
+  }
+  .the_footer{
+    display: none;
+  }
+  #vids{
+    display: none;
+  }
+  #photos-section
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
+}

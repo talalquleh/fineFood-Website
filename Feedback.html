@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fine Food | FeedBack</title>
+    <link rel="icon" href="./Content/icon.ico" />
+    <link rel="stylesheet" href="Styling/Styling.css" />
+  </head>
+  <body>
+    <header>
+    <nav class="MenuBar">
+      <a href="index.html"><img src="./Content/logo.png" alt="logo" id="logo"/></a>
+      <ul id="ListMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Feedback.html">FeedBack</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Locations.html">Locations</a></li>
+      </ul>
+      <img src="./Content/dark_theme_icon/sun.png" alt="darkmode-switch" id="icon"/>
+    </nav>
+    <script src="./JavaScript.js"></script>
+    </header>
+    <main id="feedback-container">
+      <form id="feedBack-table" action="mailto:talalquleh@gmail.com" data-children-count="5">
+        <fieldset>
+        <legend>Tell us your opinion</legend>
+        <label for="hear">How did you hear about us</label><br />
+        <input type="checkbox" name="hear_about" value="Friends">
+        <label for="hear"> My friends</label>
+        <input type="checkbox" name="hear_about" value="Social_Media">
+        <label for="hear"> Social Media</label>
+        <input type="checkbox" id="hear" name="hear_about" value="Others">
+        <label for="hear">Others</label><br/>
+        <label for="comments-sec"  >comment</label><br />
+        <textarea name="comment" id="comments-sec" placeholder="Enter your comment here" required></textarea><br/>
+        <label for="email-feedback">Your email</label><br />
+        <input type="email" id="email-feedback" placeholder="Enter email" required/><br />
+        <input type="submit" class="button" />
+        </fieldset>
+      </form>
+    </main>
+    <footer class="the_footer">
+      <address >
+              <span id="Find"> Find us on social Media</span>
+              <ul class="Social-Media">
+                <li><a href="https://www.facebook.com/Talalquleh/" target="_blank" ><img src="./Content/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/talalquleh/" target="_blank"><img src="./Content/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@talalquleh?lang=en" target="_blank"><img src="./Content/tiktok.svg" alt="tiktok"/></a></li>              </ul>
+                <div id="copy-right">&copy; 2021 Fine Food </div>
+      </address>  
+    </footer>
+
+  </body>
+</html>
