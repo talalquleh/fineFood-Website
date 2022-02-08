@@ -1,6 +1,6 @@
 # FineFood Website
-a simple website demonstrating the basics of web development.<br/>
-visit the link:
+A simple website demonstrating the basics of web development.<br/>
+Visit the link:
 https://people.inf.elte.hu/tbis1e/fineRestaurant/
 
  
